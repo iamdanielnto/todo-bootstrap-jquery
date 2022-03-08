@@ -1,5 +1,6 @@
 # todo example with bootstrap & jquery
 A simple todo List using jQuery and Bootstrap with localStorage
+Open on codepen https://codepen.io/joaorafaelm/pen/YzEboZL
 
 ## Install
 ```
