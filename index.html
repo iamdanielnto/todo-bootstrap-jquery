@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>TODO</h1>
+        <p>A todo UI</p>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6">
+        <ul class="list-group ">
+        </ul>
+
+        <div class="form-group">
+          <input id="main-input" type="text" class="form-control" placeholder="Write up something">
+        </div>
+
+        <button type="button" class="btn btn-success" id="main-button">Submit</button>
+      </div>
+
+      <div class="modal fade" id="editModal" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Edit</h4>
+            </div>
+
+            <div class="modal-body">
+              <input type="text" class="form-control" id="edit-input">
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="edit-button" data-dismiss="modal">Save changes</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
